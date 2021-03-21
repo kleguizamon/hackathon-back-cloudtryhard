@@ -4,7 +4,7 @@
 
 https://github.com/NatashaRios/hackathon-front-tryhardcloud
 
-## Refugio
+## Games
 
 getGame: https://tryhard-cloud-api.herokuapp.com/games
 
