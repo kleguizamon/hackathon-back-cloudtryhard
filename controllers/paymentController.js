@@ -15,7 +15,7 @@ class PaymentController {
         img
       );
       res.redirect(ckeckout.init_point);
-      // return res.json({ url: checkout.init_point });
+      // res.json({ url: checkout.init_point });
     } catch (e) {
       res.status(500).json({ error: 'Internal Error' });
     }
@@ -28,7 +28,7 @@ class PaymentController {
         body += chunk.toString();
       });
       req.on('end', () => {
-        console.log(body, 'webhook response');
+        console.log(body, 'webhook response =>');
         res.end('ok');
       });
     }

@@ -42,16 +42,6 @@ class PaymentService {
           street_number: '123',
         },
       },
-      payment_methods: {
-        excluded_payment_methods: [
-          {
-            id: 'amex',
-          },
-        ],
-        excluded_payment_types: [{ id: 'atm' }],
-        installments: 6,
-        default_installments: 6,
-      },
       back_urls: {
         success: 'https://localhost:3000/success',
         pending: 'https://localhost:3000.com/pending',
@@ -65,6 +55,7 @@ class PaymentService {
       const request = await axios.post(url, preferences, {
         headers: {
           'Content-Type': 'application/json',
+          'Access-Control-Allow-Methods': 'POST, GET, OPTIONS, HEAD',
         },
       });
       return request.data;
