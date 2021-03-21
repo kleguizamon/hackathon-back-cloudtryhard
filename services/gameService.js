@@ -6,7 +6,7 @@ class GameService {
     return query;
   }
   getGameById(id) {
-    const query = Games.find({ game: id }).exec();
+    const query = Games.findOne({ _id: id }).exec();
     return query;
   }
   getGamesByCategory(category) {

@@ -5,10 +5,10 @@ const GameService = require('../services/gameService');
 const GameInstance = new GameController(new GameService());
 
 router.get('/', (req, res) => {
-  GameIntance.getGame(req, res);
+  GameInstance.getGames(req, res);
 });
 
-router.get('/:id', (req, res) => {
+router.get('/id/:id', (req, res) => {
   GameInstance.getGameById(req, res);
 });
 
@@ -20,7 +20,7 @@ router.post('/', (req, res) => {
   GameInstance.postGame(req, res);
 });
 
-router.pust('/:id', (req, res) => {
+router.put('/:id', (req, res) => {
   GameInstance.putGame(req, res);
 });
 

@@ -22,7 +22,7 @@ class GameController {
     }
   }
 
-  async getGamesByCategory(res, req) {
+  async getGamesByCategory(req, res) {
     const { category } = req.params;
     try {
       const game = await this.gameServices.getGamesByCategory(category);
@@ -48,7 +48,7 @@ class GameController {
         await this.gameServices.postGame(game);
         res.status(200).json('Great! added game :)');
       } catch (e) {
-        res.status(500).json(e);
+        res.status(500).json('error');
       }
     } else {
       res.status(400).json('Information is missing');
