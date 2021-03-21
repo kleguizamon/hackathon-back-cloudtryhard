@@ -1,6 +1,6 @@
 # Hackathon Backend - Cloud Tryhard
 
-## Github Front
+## Github Frontend
 
 https://github.com/NatashaRios/hackathon-front-tryhardcloud
 
