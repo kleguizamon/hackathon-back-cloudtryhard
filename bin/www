@@ -20,19 +20,19 @@ app.set('port', port);
  * Create ATLAS connection
  */
 
-mongoose.connect('mongodb://localhost:27017/TryhardCloud', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+// mongoose.connect('mongodb://localhost:27017/TryhardCloud', {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true,
+// });
 
-// mongoose.connect(
-//   'mongodb+srv://admin_tryhardgaming:wMoYI5iwf3ljNDNV@cluster0.vmdor.mongodb.net/tryhardclouddb?retryWrites=true&w=majority',
-//   {
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true,
-//     useFindAndModify: false,
-//   }
-// );
+mongoose.connect(
+  'mongodb+srv://admin_tryhardgaming:wMoYI5iwf3ljNDNV@cluster0.vmdor.mongodb.net/tryhardclouddb?retryWrites=true&w=majority',
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useFindAndModify: false,
+  }
+);
 
 /**
  * Create HTTP server.
