@@ -15,13 +15,13 @@ class PaymentService {
     const items = [
       {
         id: '123',
-        title: 'test',
+        title: 'Cloud Tryhard Subscription',
         description: 'Cloud Tryhard Subscription',
         image: 'https://i.postimg.cc/J44Gkr6g/mp-imge.jpg',
         category_id: '123',
         quantity: parseInt(1),
-        currency_id: 'ARS',
-        unit_price: parseFloat(300),
+        currency_id: 'USD',
+        unit_price: parseFloat(6),
       },
     ];
 
