@@ -26,7 +26,7 @@ app.set('port', port);
 // });
 
 mongoose.connect(
-  'mongodb+srv://admin_tryhardgaming:m9uRDddI3JFf1lNs@cluster0.vmdor.mongodb.net/tryhardclouddb?retryWrites=true&w=majority',
+  'mongodb+srv://admin_tryhardgaming:8uIapeSQ74yLyfa3@cluster0.vmdor.mongodb.net/tryhardclouddb?retryWrites=true&w=majority',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
