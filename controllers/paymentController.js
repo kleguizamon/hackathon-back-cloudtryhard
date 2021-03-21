@@ -8,14 +8,14 @@ class PaymentController {
   async getMercadopagoLink(req, res) {
     const { name, price, unit, img } = req.body;
     try {
-      const ckeckout = await this.paymentService.createPaymentMercadoPago(
+      const checkout = await this.paymentService.createPaymentMercadoPago(
         name,
         price,
         unit,
         img
       );
-      res.redirect(ckeckout.init_point);
-      // res.json({ url: checkout.init_point });
+      // res.redirect(checkout.init_point);
+      res.json({ url: checkout.init_point });
     } catch (e) {
       res.status(500).json({ error: 'Internal Error' });
     }
